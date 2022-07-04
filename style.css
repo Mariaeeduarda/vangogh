@@ -301,7 +301,7 @@ p{
     }
 }
 /*MEdia Query*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 764px){
     #about .biography-item {
         flex-direction: row;
         height: 400px;
@@ -309,32 +309,16 @@ p{
         width: 100%;
         border-radius: 0;
     }
-    #canvas .paintings-item{
-        flex-direction: row;
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
+
     #about .all-biography .biography-info{
-        height: 100%;
-    }
-    #canvas .all-paintings .paintings-info{
         height: 100%;
     }
     #about .all-biography .biography-img{
         height: 100%;
     }
-    #canvas .all-paintings .painting-img{
-        height: 100%;
-    }
     #about .biography-item:nth-child(even) {
         flex-direction: row-reverse;
     }
-    #canvas .paintings-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
 }
 
 @media only screen and (min-width: 764px) {
@@ -348,11 +332,9 @@ p{
     #canvas .all-paintings .paintings-info {
         height: 100%;
     }
-   
     #canvas .all-paintings .painting-img {
         height: 100%;
     }
-
     #canvas .paintings-item:nth-child(even) {
         flex-direction: row-reverse;
     }
