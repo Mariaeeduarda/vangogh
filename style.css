@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Baloo+2:wght@400;500;600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,15 +7,16 @@
 
 html{
     font-size: 10px;
-    font-family: 'Baloo2', 'Time New Roman', 'Times New Roman', Times, serif;
+    font-family: 'Cinzel', serif;
     scroll-behavior: smooth;
 
 }
 body, footer {
+    background-image: url(./assets/background.jpg);
+    background-position: bottom;
+    background-color: white;
+} 
 
-    background-image: url(./assets/background.jpg); 
-    background-size: 100%;   
-}
 
 
 a{
@@ -43,21 +44,21 @@ p{
     justify-content: center;
 }
 .section-title{
-    font-size: 4rem;
-    font-weight: 700;
-    color: rgb(245, 237, 237);
+    font-size: 5rem;
+    font: weight 600px;;
+    color: rgb(7, 7, 7);
+    background-color: rgba(255, 255, 255, 0.267);
     margin-bottom: 10px;
     margin-top: 5px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
-    background-color: rgb(128, 161, 103);
 }
 
 /*seção de apresentação */
 #presentation{
     background-image: url(./assets/background.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: top center;
     position: relative;
     z-index: 1;
@@ -85,9 +86,9 @@ p{
 #presentation .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    border: 2px solid rgb(8, 8, 8);
+    color: rgb(252, 252, 252);
+    background-color:rgba(0, 0, 0, 0.7) ;
+    border: 2px solid rgb(0, 0, 0);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -96,9 +97,9 @@ p{
     transition-property: background-color, color;
 }
 #presentation .cta:hover{
-    color: rgb(243, 237, 237);
+    color: rgb(0, 0, 0);
     font-weight: 500;
-    background-color: rgb(128, 161, 103);
+    background-color: rgb(255, 255, 255);
 }
 #presentation h1 span{
     position: absolute;
@@ -108,8 +109,7 @@ p{
     width: 0%;
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
-    background-color: rgb(128, 161, 103);
-    
+    background-color: rgba(220, 245, 77, 0.6);    
 }
 #presentation h1:nth-child(1) span{
     animation-delay: .5s;
@@ -128,7 +128,7 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(78, 76, 76);
+    background-color: rgb(175, 174, 174);
     opacity: 0.2;
     z-index: -1;
 }
@@ -237,12 +237,12 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, rgb(165, 226, 245) 0%, rgb(43, 83, 83) 100%);
+    background-image: linear-gradient(60deg, rgb(243, 219, 82) 0%, rgb(52, 104, 104) 100%);
 }
 
 #canvas .paintings-info h1{
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 500;
 }
 #canvas .paintings-info h2{
     font-size: 1.8rem;
@@ -263,7 +263,7 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, rgb(84, 91, 94) 0%, rgb(43, 83, 83) 100%);
+    background-image: linear-gradient(60deg, rgb(135, 138, 139) 0%, rgb(52, 87, 87) 100%);
     opacity: 0.7;
 }
 #canvas .painting-img img{
@@ -278,7 +278,9 @@ p{
 
 @keyframes text_reveal{
     100%{
-        color: rgb(208, 224, 214);
+        color: rgb(255, 255, 255);
+        background-color: rgba(87, 170, 238, 0.6);
+
     }
 }
 @keyframes text_reveal_name{
