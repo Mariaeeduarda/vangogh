@@ -167,11 +167,12 @@ p{
     justify-content: center;
     flex-direction: column;
     background-image: linear-gradient(60deg, rgb(85, 200, 235) 0%, rgb(72, 100, 100) 100%);
+    text-overflow: ''
 }
 
 #about .biography-info h1{
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 400;
     color: rgb(2, 2, 2);
 }
 #about .biography-info h2{
@@ -352,56 +353,3 @@ footer h3 {
 footer h3 a {
     color: rgb(15, 15, 15);
 }
-/*MEdia Query*/
-@media only screen and (min-width: 1020px){
-    #about .biography-item {
-        flex-direction: row;
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-
-    #about .all-biography .biography-info{
-        height: 100%;
-    }
-    #about .all-biography .biography-img{
-        height: 100%;
-    }
-    #about .biography-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-}
-
-@media only screen and (min-width: 1020px) {
-    #canvas .paintings-item{
-        flex-direction: row;
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-    #canvas .all-paintings .paintings-info {
-        height: 100%;
-    }
-    #canvas .all-paintings .painting-img {
-        height: 100%;
-    }
-    #canvas .paintings-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-}
-footer h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 2%;
-    font-size: 2rem;
-    color: rgb(3, 3, 3);
-    font-weight: 700;
-}
-
-footer h3 a {
-    color: rgb(15, 15, 15);
-}
-
